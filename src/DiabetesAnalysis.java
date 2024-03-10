@@ -75,7 +75,7 @@ public class DiabetesAnalysis {
                 comment.append("BMI is out of normal range. ");
             }
 
-            // Add comments to the list if vitals are normal
+            // Add comments to the list if vitals are normal/healthy
             if (comment.length() == 0) {
                 comments.add("All Patient Vitals Are in Healthy/Normal Range");
             } else {
@@ -93,7 +93,7 @@ public class DiabetesAnalysis {
                         + patient.diabetesPedigreeFunction + "," + patient.age + "," + patient.diabetic + ","
                         + comments.get(i) + "\n");
             }
-            System.out.println("Output CSV file created successfully.");
+            System.out.println("Patient output csv file created successfully.");
         } catch (IOException e) {
             e.printStackTrace();
         }
